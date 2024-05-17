@@ -17,8 +17,7 @@ const getFieldComponent = (field: Field) => {
 
   switch (field.type) {
     case 'number':
-    case 'text':
-    case 'password': {
+    case 'text': {
       return InputField
     }
   }

@@ -12,8 +12,8 @@ export interface InputField extends Field<number | string> {
 }
 
 export interface SelectField<V> extends Field<V> {
-  type: 'select' // Expect the candidate to override the `type`
-  options: string[] // Expect the candidate to replace the simple `string` type with something like `{ value: string; label: string }`
+  type: 'select'
+  options: string[]
 }
 
 export interface ArrayField<E> extends Field<E[]> {
